@@ -1,67 +1,55 @@
-# CodeIgniter 4 Application Starter
+# CodeIgniter 4 Twig Sample
 
-## What is CodeIgniter?
+## Requirements
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+- PHP 8.1 or later
+- `composer` command (See [Composer Installation](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos))
+- Git
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Installation
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+~~~
+$ git clone https://github.com/kenjis/ci4-twig-sample.git
+$ cd ci4-twig-sample/
+$ composer install
+~~~
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+## How to Run
 
-## Installation & updates
+~~~
+$ cd ci4-twig-sample/
+$ php spark serve
+~~~
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+Navigate to:
+- http://localhost:8080/session_sample
+- http://localhost:8080/markdown_sample
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## References
 
-## Setup
+- [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig)
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+## Related Projects for CodeIgniter 4.x
 
-## Important Change with index.php
+### Libraries
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+- [CodeIgniter 3 to 4 Upgrade Helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)
+- [CodeIgniter3-like Captcha](https://github.com/kenjis/ci3-like-captcha)
+- [PHPUnit Helper](https://github.com/kenjis/phpunit-helper)
+- [CodeIgniter4 Attribute Routes](https://github.com/kenjis/ci4-attribute-routes)
+- [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig)
+- [CodeIgniter4 Viewi Demo](https://github.com/kenjis/ci4-viewi-demo)
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+### Tutorials
 
-**Please** read the user guide for a better explanation of how CI4 works!
+- [CodeIgniter 4 News Tutorial](https://github.com/kenjis/ci4-news)
+- [CodeIgniter 4 Validation Tutorial](https://github.com/kenjis/ci4-validation-tutorial)
+- [CodeIgniter4 Code Modules Test](https://github.com/kenjis/ci4-modules-test)
+- [CodeIgniter 4 File Upload](https://github.com/kenjis/ci4-file-upload)
+- [CodeIgniter 4 QueryBuilder Batch Sample](https://github.com/kenjis/ci4-qb-batch-sample)
 
-## Repository Management
+### Building Development Environment
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+- [CodeIgniter4 Application Template](https://github.com/kenjis/ci4-app-template)
+- [CodeIgniter4 Composer Installer](https://github.com/kenjis/ci4-composer-installer)
+- [docker-codeigniter-apache](https://github.com/kenjis/docker-codeigniter-apache)
