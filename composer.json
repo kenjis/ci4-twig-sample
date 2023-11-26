@@ -12,7 +12,8 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "codeigniter4/framework": "^4.0",
-        "kenjis/codeigniter-ss-twig": "^4.2"
+        "kenjis/codeigniter-ss-twig": "^4.2",
+        "twig/markdown-extra": "^3.8"
     },
     "require-dev": {
         "codeigniter4/devkit": "^1.1",
